@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.youdrop.youdrop.views.publications.PublicationActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="10dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/avatarIcon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                tools:src="@drawable/com_facebook_profile_picture_blank_portrait"
+                android:padding="10dip"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:paddingLeft="5dip"
+                tools:text="Nombre usuario"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/categoryIcon"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:padding="10dip"
+                android:visibility="gone"
+                android:scaleType="center"
+                app:srcCompat="@drawable/lovedrop" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:visibility="visible"
+            android:scaleType="fitCenter"
+            app:srcCompat="?android:attr/alertDialogIcon" />
+
+        <VideoView
+            android:id="@+id/video_preview"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/loading_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:text="@string/loading_video"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/likesAction"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/like_button"
+                    android:paddingRight="10dip"
+                    />
+                <Button
+                    android:id="@+id/commentsAction"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/comments_button"
+                    android:paddingRight="10dip"
+                    />
+                <Button
+                    android:id="@+id/shareAction"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/share_button"
+                    android:paddingRight="10dip"
+                    />
+                <Button
+                    android:id="@+id/moreActions"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    tools:text="10"
+                    android:background="@color/transparent"
+                    android:drawableRight="@drawable/report_button"
+                    android:paddingRight="10dip"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_message"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            tools:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/commentsContainer"
+            android:visibility="gone"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/commentList"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:layout_height="0dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/commentBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/comment_hint" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/sendComment"
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

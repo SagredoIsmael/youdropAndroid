@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/search_user_hint" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_search_users"
+        android:name="com.youdrop.youdrop.views.FriendsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/message"
+        android:layout_alignTop="@+id/message"
+        android:layout_marginTop="46dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.youdrop.youdrop.views.sections.FriendsTabFragment"
+        tools:listitem="@layout/fragment_friends" />
+
+</RelativeLayout>

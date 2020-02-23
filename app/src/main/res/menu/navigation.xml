@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/notificaciones"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_near"
+        android:icon="@drawable/near"
+        android:title="@string/title_near" />
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/publicar"
+        android:title="@string/title_add" />
+
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/contactos"
+        android:title="@string/title_friends" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/perfil"
+        android:title="@string/title_profile" />
+
+</menu>

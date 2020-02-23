@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        tools:src="@drawable/com_facebook_profile_picture_blank_square"
+        android:padding="10dip"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"
+        app:civ_shadow="true"
+        android:layout_gravity="center"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="@color/colorPrimary"/>
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <ImageButton
+        android:id="@+id/publication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mensaje"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:padding="8dp"
+        android:layout_margin="@dimen/text_margin"
+         />
+</LinearLayout>

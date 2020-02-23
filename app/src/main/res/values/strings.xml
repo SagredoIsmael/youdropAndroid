@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Publication type -->
+    <string name="type_text">Texto</string>
+    <string name="type_photo">Foto</string>
+    <string name="type_gallery">Galeria</string>
+    <string name="type_video">Video</string>
+    <string name="type_galery_video">Carrete video</string>
+    <string name="type_audio">Audioo</string>
+
+    <!-- Facebook Ids -->
+    <string name="facebook_app_id">567857533558069</string>
+    <string name="fb_login_protocol_scheme">fb567857533558069</string>
+
+    <!-- App -->
+    <string name="app_name">Youdrop</string>
+    <!-- Sections -->
+    <string name="title_notifications">Notificaciones</string>
+    <string name="title_near">Cerca</string>
+    <string name="title_add">Publicar</string>
+    <string name="title_friends">Amigos</string>
+    <string name="title_profile">Perfil</string>
+    <!-- Misc -->
+    <string name="public_label">Publico</string>
+    <string name="private_label">Privado</string>
+    <string name="friends_label">Amigos</string>
+    <string name="chats_label">Chats</string>
+    <string name="empty_list">No hay nada</string>
+    <string name="likers">Les gusta</string>
+
+
+    <!-- Login -->
+    <string name="title_activity_login">Login</string>
+    <string name="show_terms">Ver Términos</string>
+    <string name="accept">Al iniciar sesión aceptas los términos y condiciones</string>
+    <string name="yes">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Publication -->
+    <string name="location_message">Quedan %.2f Km para visualización</string>
+    <string name="more_actions">Mas acciones</string>
+    <string name="report">Reportar</string>
+    <string name="share_cobtebt">Descargate Youdrop la red glocal para ver este contenido. http://www.you-drop.com/contenido-no-accesible/?publication=%s</string>
+
+    <!-- Publish -->
+    <string name="title_activity_publish">Publicar</string>
+    <string name="downloadable">Descargable</string>
+    <string name="anonymous">Anonimo</string>
+    <string name="message_hint">Escribe tu mensaje</string>
+    <string name="friends_hint">Busca a tus amigos</string>
+    <!-- Profile -->
+    <string name="title_activity_profile">Perfil</string>
+    <string name="publications">publicaciones</string>
+    <string name="active_publications">publicaciones activas</string>
+    <string name="likes">likes</string>
+    <string name="action_friendship">Amistad</string>
+    <string name="friendship_created">Amistad enviada</string>
+    <string name="friendship_denied">Amistad denegada</string>
+    <string name="friendship_accepted">Amistad aceptada</string>
+    <string name="follow_ok">Siguiendo usuario</string>
+    <string name="unfollow_ok">Dejando de seguir usuario</string>
+    <string name="avatar_change">Cambiar el avatar</string>
+    <!-- Menu -->
+    <string name="action_settings">Ajustes</string>
+    <string name="action_add">Añadir</string>
+
+    <string name="search_user_hint">Buscar usuarios</string>
+    <string name="search_users">Buscar usuarios</string>
+    <string name="empty"></string>
+    <string name="no_items">No hay mensajes</string>
+    <string name="loading_video">Cargando video</string>
+
+    <string name="comment_hint">Escribe tu comentario</string>
+    <string name="send">Enviar</string>
+    <string name="name">Nombre</string>
+    <string name="username">Usuario</string>
+    <string name="email">Email</string>
+    <string name="description">Descripción</string>
+
+
+</resources>

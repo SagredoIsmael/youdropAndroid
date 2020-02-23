@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.youdrop.youdrop.views.ProfileActivity">
+    <item
+        android:id="@+id/action_friendship"
+        android:orderInCategory="100"
+        android:title="@string/action_friendship"
+        android:icon="@drawable/perfil"
+        app:showAsAction="always" />
+</menu>

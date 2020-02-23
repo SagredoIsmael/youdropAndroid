@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.youdrop.youdrop.views.publications.PublishActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <co.ceryle.radiorealbutton.RadioRealButtonGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rrbg_animateDrawables_enter="overshoot"
+        app:rrbg_animateTexts_enter="overshoot"
+        app:rrbg_dividerColor="@color/colorPrimary"
+        app:rrbg_dividerSize="1dp"
+        app:rrbg_radius="10dp"
+        app:rrbg_selectorColor="@color/colorPrimary"
+        app:rrbg_selectorSize="2dp"
+        android:id="@+id/radioRealButtonGroup">
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/public_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawableHeight="36dp"
+            app:rrb_drawablePadding="8dp"
+            app:rrb_drawableWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimary"
+            app:rrb_text="@string/public_label"
+            app:rrb_textColor="@color/colorPrimary" />
+
+        <co.ceryle.radiorealbutton.RadioRealButton
+            android:id="@+id/private_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rrb_drawableGravity="right"
+            app:rrb_drawableHeight="36dp"
+            app:rrb_drawablePadding="8dp"
+            app:rrb_drawableWidth="36dp"
+            app:rrb_ripple="true"
+            app:rrb_rippleColor="@color/colorPrimary"
+            app:rrb_text="@string/private_label"
+            app:rrb_textColor="@color/colorPrimary" />
+    </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.youdrop.youdrop.ScrollingActivity"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_margin="20dip"
+            android:visibility="gone"
+            app:srcCompat="@drawable/amigos" />
+
+        <android.widget.VideoView
+            android:id="@+id/previewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="400dip"
+            android:visibility="gone" />
+
+
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/message_hint" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="20dip"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/friendsSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/friends_hint"
+            android:layout_margin="20dip"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/anonymous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+
+                android:text="@string/anonymous" />
+
+            <Switch
+                android:id="@+id/downloadable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+
+                android:text="@string/downloadable" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
